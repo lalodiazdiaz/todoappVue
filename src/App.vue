@@ -106,7 +106,7 @@ onMounted(() => {
             <span :class="`bubble ${todo.category} `"></span>
           </label>
           <div class="todo-content">
-            <input type="text" v-model="todo.content" />
+            <input type="text" v-model="todo.content" readonly />
           </div>
           <div class="actions">
             <button class="delete" @click="removeTodo(todo)">Delete</button>
